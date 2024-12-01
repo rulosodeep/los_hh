@@ -1,0 +1,82 @@
+/* adminpage.module.css */
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.logoutButton {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #ff4d4f;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logoutButton:hover {
+  background-color: #e03e3e;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+.button {
+  padding: 10px;
+  background-color: #ffa500; /* Naranja */
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #ff8c00;
+}
+
+.episodeList {
+  list-style: none;
+  padding: 0;
+}
+
+.episodeItem {
+  padding: 10px;
+  border-bottom: 1px solid #333333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editButton, .deleteButton {
+  padding: 5px 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.editButton {
+  background-color: #ffa500;
+  color: #000000;
+}
+
+.deleteButton {
+  background-color: #ff4d4f;
+  color: #ffffff;
+}
