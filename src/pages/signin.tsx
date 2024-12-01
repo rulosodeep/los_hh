@@ -52,9 +52,9 @@ export default function SignIn() {
         <button type="submit" className={styles.button}>
           Iniciar Sesión
         </button>
-        <a href="/" className={styles.backButton}>
+        <link href="/" className={styles.backButton}>
           Volver a la Página de Inicio
-        </a>
+        </link>
       </form>
         
     </div>
