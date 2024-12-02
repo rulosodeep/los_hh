@@ -2,7 +2,6 @@ import Image from "next/image";
 import styles from "./carousel.module.css";
 import React, { useState, useRef, useEffect } from "react";
 import ReactPlayer from "react-player";
-
 // Definir el tipo de datos para los episodios
 type Episode = {
   id: number;
