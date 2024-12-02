@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
 import styles from "./signin.module.css";
+import Link from "next/link";
 
 export default function SignIn() {
   const [username, setUsername] = useState("");
@@ -55,9 +56,9 @@ export default function SignIn() {
         <button type="submit" className={styles.button}>
           Iniciar Sesión
         </button>
-        <link href="/" className={styles.backButton}>
+        <Link href="/" className={styles.backButton}>
           Volver a la Página de Inicio
-        </link>
+        </Link>
       </form>
     </div>
   );
