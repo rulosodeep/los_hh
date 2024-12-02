@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import styles from "./signin.module.css";
 import Link from "next/link";
-
+// Actualización forzada para despliegue
 export default function SignIn() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
