@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
+import Link from "next/link"; // Importa el componente Link
 import styles from "./signin.module.css";
 
 export default function SignIn() {
@@ -19,7 +20,10 @@ export default function SignIn() {
       });
 
       if (response.ok) {
-        localStorage.setItem("isLoggedIn", "true"); // Guarda el estado de sesión
+        if (typeof window !== "undefined") {
+          // Asegúrate de que `localStorage` esté disponible
+          localStorage.setItem("isLoggedIn", "true"); // Guarda el estado de sesión
+        }
         router.push("/adminpage"); // Redirige al panel de administración
       } else {
         setError("Credenciales incorrectas");
@@ -52,11 +56,11 @@ export default function SignIn() {
         <button type="submit" className={styles.button}>
           Iniciar Sesión
         </button>
-        <a href="/" className={styles.backButton}>
-          Volver a la Página de Inicio
-        </a>
+        {/* Cambiar el link a un componente de Next.js */}
+        <Link href="/">
+          <a className={styles.backButton}>Volver a la Página de Inicio</a>
+        </Link>
       </form>
-        
     </div>
   );
 }
