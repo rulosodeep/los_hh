@@ -12,3 +12,4 @@ export default async function handler(
     res.status(405).json({ message: `Método ${req.method} no permitido` });
   }
 }
+//hola
