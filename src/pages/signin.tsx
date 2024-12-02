@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
-import Link from "next/link"; // Importa el componente Link
 import styles from "./signin.module.css";
 
 export default function SignIn() {
@@ -56,10 +55,9 @@ export default function SignIn() {
         <button type="submit" className={styles.button}>
           Iniciar Sesión
         </button>
-        {/* Cambiar el link a un componente de Next.js */}
-        <Link href="/">
-          <a className={styles.backButton}>Volver a la Página de Inicio</a>
-        </Link>
+        <link href="/" className={styles.backButton}>
+          Volver a la Página de Inicio
+        </link>
       </form>
     </div>
   );
